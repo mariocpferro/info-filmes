@@ -13,7 +13,7 @@ const apiKey = "b129a6e9";
 const imgDefault = "./default_image.png";
 
 async function buscaFilme(nomeBusca){
-     const resposta = await fetch(`http://www.omdbapi.com/?t=${nomeBusca}&apikey=${apiKey}`);
+     const resposta = await fetch(`https://www.omdbapi.com/?t=${nomeBusca}&apikey=${apiKey}`);
      return resposta.json();
 }
 
